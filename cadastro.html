@@ -42,17 +42,18 @@
                     <option value="admin">Engenharia eletrica</option>
                 </select>
 
+                
+                <label for="sexo" style="margin-top: 20px;">*Sexo:</label>
+                <label>Masculino<input type="radio" name="sexo" value="masculino" required></label>
+                <label>Feminino<input type="radio" name="sexo" value="feminino" required></label>
+                <label>Outros<input type="radio" name="sexo" value="outro" required></label>
+
                 <div class="upload-btn-wrapper">
                     <label for="curso">*Envie o comprovante de conclusão do ensino medio:</label>
                     <button class="btn">Selecionar Documento</button>
                     <input type="file" name="documento" id="documento" required>
                 </div>
                 <br>
-
-                <label for="sexo">*Sexo:</label>
-                <label>Masculino<input type="radio" name="sexo" value="masculino" required></label>
-                <label>Feminino<input type="radio" name="sexo" value="feminino" required></label>
-                <label>Outros<input type="radio" name="sexo" value="outro" required></label>
 
                 <label for="senha">*Senha:</label>
                 <input placeholder="Digite sua senha..." type="password" id="senha" name="senha" required>

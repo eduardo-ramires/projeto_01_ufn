@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro minha UFN</title>
     <link rel="stylesheet" href="style/style.css">
+    <style>
+        .background{
+            position: fixed;
+        }
+    </style>
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>c
     <div class="background">
         <div class="content">
-            <form method="post" style="margin-top: 10%;">
+            <form id="formulario" method="post" style="margin-top: 10%;">
                 <h2>Login minha UFN</h2>
         
                 <label for="email">E-mail:</label>
@@ -18,7 +25,7 @@
                 <label for="senha">Senha:</label>
                 <input placeholder="Digite sua senha..."  type="password" id="senha" name="senha" required>
                 <a href=""><small>Esqueci minha senha</small></a>
-                <button type="submit">Entrar</button>
+                <button onclick="entrou()" >Entrar</button>
             </form>
         </div>
     </div>

@@ -1,5 +1,5 @@
 .background {
-    position: fixed;
+
     top: 0;
     left: 0;
     width: 100%;
@@ -60,6 +60,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 
 form {
     max-width: 600px;

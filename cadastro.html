@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro minha UFN</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <script src="js.js"></script>
     <div class="background">
         <div class="content">
-            <form method="post">
+            <form id="formulario" method="post">
                 <h2>Cadastro minha ufn</h2>
                 
                 <label for="nome">*Nome:</label>
-                <input placeholder="Digite seu nome..." type="text" id="nome" name="nome" required>
+                <input id="nome" placeholder="Digite seu nome..." type="text" id="nome" name="nome" required>
 
                 <label for="email">*E-mail:</label>
                 <input placeholder="Digite seu e-mail..." type="email" id="email" name="email" required>
@@ -52,13 +54,14 @@
                 </div>
                 <br>
 
-                <label for="senha">*Senha:</label>
-                <input placeholder="Digite sua senha..." type="password" id="senha" name="senha" required>
+                <label  for="senha">*Senha:</label>
+                <input id="senha1"  placeholder="Digite sua senha..." type="password" id="senha" name="senha" required>
 
                 <label for="confirmaSenha">*Confirme a Senha:</label>
-                <input placeholder="Confirme sua senha..." type="password" id="confirmaSenha" name="confirmaSenha" required>
+                <input id="senha2" placeholder="Confirme sua senha..." type="password" id="confirmaSenha" name="confirmaSenha" required>
 
-                <button type="submit">Cadastrar</button>
+                <button id="cadastrarBtn" onclick="sucesso()">Cadastrar</button>
+                <button  onclick="limpaCampo()">Limpar campos</button>
             </form>
 
             <footer>
